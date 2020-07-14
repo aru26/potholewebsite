@@ -1,0 +1,26 @@
+body
+{
+    font-family: forte;
+    background: linear-gradient( to right, rgb(104, 138, 104),rgb(119, 119, 160));
+}
+h1{
+    text-align: center;
+    color: rgb(21, 24, 21);
+    margin: 30px 0 50px;
+}
+.gallery
+{
+    margin: 10px 50px;
+}
+.gallery img
+{
+    width: 230px;
+    padding: 5px; 
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery img:hover
+{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
