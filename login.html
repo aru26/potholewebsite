@@ -1,0 +1,57 @@
+<html>
+    <heaD>
+        <title>
+            login page
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </heaD>
+    <body background="image/1.jpg">
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                </div>
+                <div class="social-icon">
+                        <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                              </ul>
+                </div>
+                <form id="Login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User ID" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="Register" class="input-group">
+                        <input type="text" class="input-field" placeholder="User ID" required>
+                        <input type="email" class="input-field" placeholder="Email ID" required>
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="password" class="input-field" placeholder="Repeat Password" required>
+                        <input type="checkbox" class="check-box"><span>I agree to the Terms and Condition</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+            </div>
+        </div>
+        <script>
+        var x= document.getElementById("Login");
+        var y= document.getElementById("Register");
+        var z= document.getElementById("btn");
+
+        function Register(){
+            x.style.left= "-400px";
+            y.style.left= "50px"
+            z.style.left= "110px"
+        }
+        function Login(){
+            x.style.left= "50px";
+            y.style.left= "450px"
+            z.style.left= "0";
+        }
+        </script>
+    </body>
+</html>
